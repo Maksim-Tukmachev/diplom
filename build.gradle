@@ -18,4 +18,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperty 'db.url', System.getProperty('db.url', 'jdbc:mysql://localhost:3306/app')
 }

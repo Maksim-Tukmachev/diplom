@@ -21,12 +21,13 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
-    testImplementation 'com.codeborne:selenide:5.5.1'
+    testImplementation 'com.codeborne:selenide:6.17.2'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'mysql:mysql-connector-java:8.0.30'
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
+    implementation 'org.postgresql:postgresql:42.6.0'
 
 }
 

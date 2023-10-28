@@ -48,7 +48,7 @@ public class TestForCredit {
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
         creditPage.waitForSuccessNotification();
         val expected = DataGenerator.getFirstCardStatus();
-        val actual = SQL.getDebitPaymentStatus();
+        val actual = SQL.getCreditPaymentStatus();
         assertEquals(expected, actual);
     }
 
@@ -90,7 +90,7 @@ public class TestForCredit {
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
         creditPage.waitForFailedNotification();
         val expected = DataGenerator.getSecondCardStatus();
-        val actual = SQL.getDebitPaymentStatus();
+        val actual = SQL.getCreditPaymentStatus();
         assertEquals(expected, actual);
     }
 

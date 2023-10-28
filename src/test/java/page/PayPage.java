@@ -54,30 +54,30 @@ public class PayPage extends MainPage{
     }
 
     public void waitForFailedNotification() {
-        failedNotification.waitUntil(Condition.visible, 11000);
+        failedNotification.shouldBe(Condition.visible);
     }
 
     public void waitForSuccessNotification() {
-        successNotification.waitUntil(Condition.visible, 11000);
+        successNotification.shouldBe(Condition.visible);
     }
 
     public void waitForMandatoryFieldMessage() {
-        mandatoryFieldMessage.waitUntil(Condition.visible, 11000);
+        mandatoryFieldMessage.shouldBe(Condition.visible);
     }
 
     public void waitForWrongFormatMessage() {
-        wrongFormatMessage.waitUntil(Condition.visible, 11000);
+        wrongFormatMessage.shouldBe(Condition.visible);
     }
 
     public void waitForInvalidCharactersMessage() {
-        invalidCharactersMessage.waitUntil(Condition.visible, 11000);
+        invalidCharactersMessage.shouldBe(Condition.visible);
     }
 
     public void waitForWrongCardExpirationMessage() {
-        wrongCardExpirationMessage.waitUntil(Condition.visible, 11000);
+        wrongCardExpirationMessage.shouldBe(Condition.visible);
     }
 
     public void waitForCardExpiredMessage() {
-        cardExpiredMessage.waitUntil(Condition.visible, 11000);
+        cardExpiredMessage.shouldBe(Condition.visible);
     }
 }

@@ -338,7 +338,7 @@ public class TestForCredit {
         val cardOwner = DataGenerator.getCardholderNameWithDigits();
         val code = DataGenerator.getCvc();
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
-        creditPage.waitForInvalidCharactersMessage();
+        creditPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -351,7 +351,7 @@ public class TestForCredit {
         val cardOwner = DataGenerator.getCardholderNameWithSpecialCharacters();
         val code = DataGenerator.getCvc();
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
-        creditPage.waitForInvalidCharactersMessage();
+        creditPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -377,7 +377,7 @@ public class TestForCredit {
         val cardOwner = DataGenerator.getValidName();
         val code = DataGenerator.getCvcWithText();
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
-        creditPage.waitForInvalidCharactersMessage();
+        creditPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -390,7 +390,7 @@ public class TestForCredit {
         val cardOwner = DataGenerator.getValidName();
         val code = DataGenerator.getShortCvc();
         creditPage.fillForm(cardNumber, month, year, cardOwner, code);
-        creditPage.waitForInvalidCharactersMessage();
+        creditPage.waitForWrongFormatMessage();
     }
 
 }

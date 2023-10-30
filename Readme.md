@@ -73,8 +73,8 @@ Github - склонировать проект себе на ПК для пос�
 
 Для формирования отчета в Allure необходимо выполнить команды
 ```
-gradlew clean test allureReport 
-gradlew allureServe
+./gradlew clean test allureReport 
+./gradlew allureServe
 ```
 ## Документация
 

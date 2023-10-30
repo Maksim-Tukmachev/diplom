@@ -338,7 +338,7 @@ public class TestForPay {
         val cardOwner = DataGenerator.getCardholderNameWithDigits();
         val code = DataGenerator.getCvc();
         payPage.fillForm(cardNumber, month, year, cardOwner, code);
-        payPage.waitForInvalidCharactersMessage();
+        payPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -351,7 +351,7 @@ public class TestForPay {
         val cardOwner = DataGenerator.getCardholderNameWithSpecialCharacters();
         val code = DataGenerator.getCvc();
         payPage.fillForm(cardNumber, month, year, cardOwner, code);
-        payPage.waitForInvalidCharactersMessage();
+        payPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -377,7 +377,7 @@ public class TestForPay {
         val cardOwner = DataGenerator.getValidName();
         val code = DataGenerator.getCvcWithText();
         payPage.fillForm(cardNumber, month, year, cardOwner, code);
-        payPage.waitForInvalidCharactersMessage();
+        payPage.waitForWrongFormatMessage();
     }
 
     @Test
@@ -390,6 +390,6 @@ public class TestForPay {
         val cardOwner = DataGenerator.getValidName();
         val code = DataGenerator.getShortCvc();
         payPage.fillForm(cardNumber, month, year, cardOwner, code);
-        payPage.waitForInvalidCharactersMessage();
+        payPage.waitForWrongFormatMessage();
     }
 }

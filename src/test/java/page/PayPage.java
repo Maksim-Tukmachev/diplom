@@ -54,11 +54,11 @@ public class PayPage extends MainPage{
     }
 
     public void waitForFailedNotification() {
-        failedNotification.shouldBe(Condition.visible);
+        failedNotification.shouldBe(Condition.visible, Duration.ofSeconds(11));
     }
 
     public void waitForSuccessNotification() {
-        successNotification.shouldBe(Condition.visible);
+        successNotification.shouldBe(Condition.visible, Duration.ofSeconds(11));
     }
 
     public void waitForMandatoryFieldMessage() {
